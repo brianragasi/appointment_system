@@ -1,0 +1,93 @@
+/* Animation styles */
+
+/* Slide in from the left */
+@keyframes transitionIn-X {
+        from {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    /* Slide in from above */
+    @keyframes transitionIn-Y-over {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Slide in from below */
+    @keyframes transitionIn-Y-bottom {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    /* Fade in effect */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    /* Scale on hover */
+    @keyframes scaleUp {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.05);
+        }
+    }
+    
+    /* Scale back to normal */
+    @keyframes scaleDown {
+        from {
+            transform: scale(1.05);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+    
+    /* Animation classes */
+    
+    /* Apply fade-in effect */
+    .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    
+    /* Button hover effect */
+    .btn {
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    
+    .btn:hover {
+        background-color: #0056b3; /* Change to a desired hover color */
+        animation: scaleUp 0.2s forwards; /* Scale up on hover */
+    }
+    
+    .btn:active {
+        animation: scaleDown 0.2s forwards; /* Scale down when active */
+    }
+    
+    /* Add more animation classes as needed */
+    
+    /* Transition end */
+    

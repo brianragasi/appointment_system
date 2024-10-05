@@ -1,0 +1,79 @@
+/* Base Styles */
+body {
+    margin: 7%;
+    background-color: #F6F7FA;
+}
+
+/* Container Styles */
+.container {
+    width: 45%;
+    background-color: white;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 8px;
+    padding: 20px; /* Added padding for better spacing */
+    box-shadow: 0 3px 5px 0 rgba(240, 240, 240, 0.3);
+    animation: transitionIn-Y-over 0.5s;
+}
+
+/* Table Cell Alignment */
+td {
+    text-align: center;
+}
+
+/* Header Text Styles */
+.header-text {
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/* Sub Text Styles */
+.sub-text {
+    font-size: 15px;
+    color: rgb(138, 138, 138);
+}
+
+/* Form Label Styles */
+.form-label {
+    color: rgb(44, 44, 44);
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Label Cell Alignment */
+.label-td {
+    text-align: left;
+    padding-top: 10px;
+}
+
+/* Hover Link Styles */
+.hover-link1 {
+    font-weight: bold;
+    transition: opacity 0.5s; /* Combine hover effect with transition */
+}
+
+.hover-link1:hover {
+    opacity: 0.8;
+}
+
+/* Button Styles */
+.login-btn {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
+
+    .header-text {
+        font-size: 24px; /* Smaller header text on mobile */
+    }
+
+    .sub-text {
+        font-size: 14px; /* Adjust sub text size on mobile */
+    }
+}
